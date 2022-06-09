@@ -1,0 +1,54 @@
+﻿@using ASP.NET_Project_MySQL.Models
+@model IEnumerable<UsersModel>
+@{
+    Layout = "~/Views/Shared/_header.cshtml";
+    ViewBag.Title = "USERS";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>username</th>
+                            <th>password</th>
+                            <th>role</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        @foreach (UsersModel users in Model)
+                        {
+                            <tr>
+                                <td>@users.id</td>
+                                <td>@users.username</td>
+                                <td>@users.password</td>
+                                <td>@users.role</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- /.container-fluid -->
+    
+
+
+</body>
+</html>
