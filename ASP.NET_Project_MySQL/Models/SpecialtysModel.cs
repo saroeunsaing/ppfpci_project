@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ASP.NET_Project_MySQL.Models
 {
-    public class DepartmentsModel
+    public class SpecialtysModel
     {
         public string id { get; set; }
         public string namekh { get; set; }

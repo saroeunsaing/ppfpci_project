@@ -7,5 +7,10 @@ namespace ASP.NET_Project_MySQL.Models
 {
     public class LevelsModel
     {
+        public string id { get; set; }
+        public string namekh { get; set; }
+        public string nameen { get; set; }
+
+        public string dep { get; set; }
     }
 }

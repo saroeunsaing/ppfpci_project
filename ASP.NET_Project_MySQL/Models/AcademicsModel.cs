@@ -7,5 +7,8 @@ namespace ASP.NET_Project_MySQL.Models
 {
     public class AcademicsModel
     {
+        public string id { get; set; }
+        public string namekh { get; set; }
+        public string nameen { get; set; }
     }
 }

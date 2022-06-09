@@ -145,6 +145,7 @@
     <Compile Include="Models\ScoresModel.cs" />
     <Compile Include="Models\SemestersModel.cs" />
     <Compile Include="Models\ShiftsModel.cs" />
+    <Compile Include="Models\SpecialtysModel.cs" />
     <Compile Include="Models\StudentsModel.cs" />
     <Compile Include="Models\SubjectsModel.cs" />
     <Compile Include="Models\UsersModel.cs" />

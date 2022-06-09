@@ -9,12 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>P P F C P I</title>
 
     <!-- Custom fonts for this template-->
     <link href="~/Theme/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400&family=Suwannaphum:wght@100;300;400&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template-->
 
@@ -35,7 +38,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">PPFCPI <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
@@ -109,17 +112,17 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">SCHOOL COMPONENTS:</h6>
                         <a class="collapse-item" href="#">Student</a>
-                        <a class="collapse-item" href="#">Academics</a>
-                        <a class="collapse-item" href="#">Departments</a>
-                        <a class="collapse-item" href="#">Levels</a>
-                        <a class="collapse-item" href="#">Specialties</a>
-                        <a class="collapse-item" href="#">Subjects</a>
-                        <a class="collapse-item" href="#">Levels</a>
+                        <a class="collapse-item" href="@Url.Action("index","academics")">Academics</a>
+                        <a class="collapse-item" href="@Url.Action("index","departments")">Departments</a>
+                        <a class="collapse-item" href="@Url.Action("index","levels")">Levels</a>
+                        <a class="collapse-item" href="@Url.Action("index","specialtys")">Specialties</a>
+                        <a class="collapse-item" href="@Url.Action("index","subjects")">Subjects</a>
+                        <a class="collapse-item" href="@Url.Action("index","batachs")">Batch</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">OTHER COMPONENT:</h6>
-                        <a class="collapse-item" href="404.html">Semesters</a>
-                        <a class="collapse-item" href="blank.html">Years</a>
-                        <a class="collapse-item" href="blank.html">Shifts</a>
+                        <a class="collapse-item" href="@Url.Action("index","semesters")">Semesters</a>
+                        <a class="collapse-item" href="@Url.Action("index","years")">Years</a>
+                        <a class="collapse-item" href="@Url.Action("index","shifts")">Shifts</a>
                     </div>
                 </div>
             </li>

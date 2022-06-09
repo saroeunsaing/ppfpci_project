@@ -1,8 +1,53 @@
-﻿
+﻿@using ASP.NET_Project_MySQL.Models
+@model IEnumerable<SemestersModel>
 @{
     Layout = "~/Views/Shared/_header.cshtml";
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
 
+</head>
+<body>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>namekh</th>
+                            <th>nameen</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (SemestersModel semesters in Model)
+                        {
+                            <tr>
+                                <td>@semesters.id</td>
+                                <td style="font-family: 'Suwannaphum',serif;">@semesters.namekh</td>
+                                <td>@semesters.nameen</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /.container-fluid -->
+
+
+
+</body>
+</html>
