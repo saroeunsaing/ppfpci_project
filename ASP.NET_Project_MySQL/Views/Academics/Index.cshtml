@@ -25,6 +25,7 @@
                             <th>id</th>
                             <th>namekh</th>
                             <th>nameen</th>
+                            <th>action</th>
 
                         </tr>
                     </thead>
@@ -32,11 +33,14 @@
                     <tbody>
                         @foreach (AcademicsModel academics in Model)
                         {
-                            <tr>
-                                <td>@academics.id</td>
-                                <td>@academics.namekh</td>
-                                <td>@academics.nameen</td>
-                            </tr>
+                        <tr>
+                            <td>@academics.id</td>
+                            <td>@academics.namekh</td>
+                            <td>@academics.nameen</td>
+                            <td> @Html.ActionLink("Edit", "Edit", new { id = academics.id }, new { @class = "" }) | 
+                                @Html.ActionLink("Delete", "Delete", new { id = academics.id}, new { onclick = "return confirm('Are sure wants to delete?');" })
+                            </td>
+                        </tr>
                         }
                     </tbody>
                 </table>
